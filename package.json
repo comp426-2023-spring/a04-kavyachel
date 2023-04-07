@@ -1,0 +1,26 @@
+{
+  "name": "a04-kavyachel",
+  "version": "1.0.0",
+  "description": "This assignment will help you stand up a web API using Express and the module that you produced for a03.",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a04-kavyachel.git"
+  },
+  "author": "kavyachel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a04-kavyachel/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a04-kavyachel#readme",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}

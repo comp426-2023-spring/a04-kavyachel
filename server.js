@@ -1,4 +1,4 @@
-import { rps, rpsls } from "./lib/rpsls";
+import { rps, rpsls } from './lib/rpsls.js';
 //importing modules
 import minimist from 'minimist'
 import express from 'express'
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //Check endpoint at /app/ that returns 200 OK
-app.get('/app', (req, res) => {
+app.get('/app/', (req, res) => {
     res.status(200).send('200 OK').end();
 });
 
@@ -26,6 +26,7 @@ app.get('/app/rpsls', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.play))).end();
 })
 
+//
 app.get('/app/rps/play', (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.query.play))).end();
 })

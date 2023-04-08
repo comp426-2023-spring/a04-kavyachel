@@ -18,37 +18,37 @@ app.get('/app/', (req, res) => {
 
 //Endpoint that return {"player: (rock|paper|scissors)"}
 app.get('/app/rps', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.body.play))).end();
+    res.status(200).send(JSON.stringify(rps(req.body.shot))).end();
 })
 
 //Endpoint that return {"player":"(rock|paper|scissors|lizard|spock)"}
 app.get('/app/rpsls', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.body.play))).end();
+    res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
 })
 
 //
 app.get('/app/rps/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.query.play))).end();
+    res.status(200).send(JSON.stringify(rps(req.query.shot))).end();
 })
 
 app.get('/app/rpsls/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.query.play))).end();
+    res.status(200).send(JSON.stringify(rpsls(req.query.shot))).end();
 })
 
 app.post('/app/rps/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.body.play))).end();
+    res.status(200).send(JSON.stringify(rps(req.body.shot))).end();
 })
 
 app.post('/app/rpsls/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.body.play))).end();
+    res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
 })
 
-app.get('/app/rps/play/:play', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.params.play))).end();
+app.get('/app/rps/play/:shot', (req, res) => {
+    res.status(200).send(JSON.stringify(rps(req.params.shot))).end();
 })
 
-app.get('/app/rpsls/play/:play', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.params.play))).end();
+app.get('/app/rpsls/play/:shot', (req, res) => {
+    res.status(200).send(JSON.stringify(rpsls(req.params.shot))).end();
 })
 
 //Default API endpoint that returns 404 NOT FOUND
